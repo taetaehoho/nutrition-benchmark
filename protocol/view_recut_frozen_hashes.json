@@ -1,0 +1,17 @@
+{
+  "frozen_at_utc": "2026-11-02T23:01:23.230802+00:00",
+  "sha256": {
+    "protocol.json": "withheld: the original file contains the operator's username or home-folder path",
+    "cohort.json": "8c9296711713fc2e7168d5ecf0be92fe90a551a36cf3e9a0a225261d444c6cbb",
+    "download_plan.json": "74cbab384898f66a47074964d6f1367fcfb1bb67b0a66a166ac99a175e7a156b",
+    "main_overhead_records.json": "0ed3f6f3d4a3afdb9582285247428b4f3f9994cc1728e67a988962d6d11546a8",
+    "README.md": "4ed1e9655f10d36173d7ceb4d970678fb959ab0a0da74566e6af4cf9582a069a",
+    "recut_common.py": "withheld: the original file contains the operator's username or home-folder path",
+    "prepare_recut.py": "4531ef7a2b2fbf6de170439bf0a9272698122c5a1a8c3f09e3d797637f70b59e",
+    "freeze_recut.py": "faddd079da606efd56848d4c3b47155feb0d23510bf58b5ff4713a5445310bdf",
+    "fetch_frames.py": "9164dd04ec33c3bca0d98d7a92157c52121cd10ccc4ca6eedc18b632893bd71f",
+    "review_frames.py": "ac7f54554395a11a159b1f3d1b3b39f3f647dc19faee172c025c9fed907c9527",
+    "run_recut.py": "16acca547259807c7bc02387470ce7443e56921104ec05f648e5a0cbd8ab6c8b",
+    "analyze_recut.py": "50c0ab7f5b8461f90514873516ae976e196285d9bc72e9235e521b840d5f908f"
+  }
+}

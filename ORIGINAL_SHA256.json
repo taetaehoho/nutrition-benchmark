@@ -1,0 +1,164 @@
+{
+ "note": "SHA-256 of each published file and of the file it was copied from, as it was on disk after the runs. run.py and report.py were edited during the main run, and report.py again on 2 November 2026 (UTC), after it; both were copied from their final versions. Six files were changed for publication (see each \"change\"). Five of them have their original hashes withheld (null): each of those originals contains the operator's username or home-folder path, or the hashes of files that do, so its hash would confirm a guessed username. The sixth, protocol/view_recut_frozen/main_overhead_records.json.gz, has each record's hash of its raw answer file withheld, because those files contain the operator's username, and each record's start time removed; its original hash is kept, because that original cannot be rebuilt without the raw answer files, most of which hold reasoning text that is not published. The operator keeps the originals and can show them to a reviewer. The re-cut's freeze record (protocol/view_recut_frozen_hashes.json) refers to the original files: its entries for the two redacted frozen files, protocol.json and recut_common.py, are withheld for the same reason, and its entry for main_overhead_records.json is the original's hash, so it does not match the published copy.",
+ "files": [
+  {
+   "file": "code/main_run/prepare.py",
+   "original_sha256": "112b3c66124443cdb2157e9f187b8625ed0f1460791a6be809b37eb4db18977b",
+   "published_sha256": "112b3c66124443cdb2157e9f187b8625ed0f1460791a6be809b37eb4db18977b",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/main_run/run.py",
+   "original_sha256": null,
+   "original_sha256_note": "withheld: the original contains the operator's home-folder path, so its hash would confirm a guessed username",
+   "published_sha256": "de500679b4737cbef0d469ce4278e9052566cb1d2247d8455f15a8eb0b852674",
+   "changed": true,
+   "change": "home-folder path written as os.path.expanduser('~/...')"
+  },
+  {
+   "file": "code/main_run/go_full_run.py",
+   "original_sha256": "30f3350cbec16d29b73ac631df0a6a2d1ce5d40c86b4bf11869e8d628da2d580",
+   "published_sha256": "30f3350cbec16d29b73ac631df0a6a2d1ce5d40c86b4bf11869e8d628da2d580",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/main_run/go_muse_pilot.py",
+   "original_sha256": "817a0d32d6aa3654b4225eb2ff289c5dde511531ec9ec47a3281d5e3b6b0169a",
+   "published_sha256": "817a0d32d6aa3654b4225eb2ff289c5dde511531ec9ec47a3281d5e3b6b0169a",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/main_run/validate_references.py",
+   "original_sha256": "b99a5de69f70d1bd474d08938720888989fdb6fe74001028136cc14dc9ba0246",
+   "published_sha256": "b99a5de69f70d1bd474d08938720888989fdb6fe74001028136cc14dc9ba0246",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/main_run/report.py",
+   "original_sha256": "0e375390a82d0f32c8b9c33493cdd0f231a509b838c5d944f1cbf66a30ea226e",
+   "published_sha256": "0e375390a82d0f32c8b9c33493cdd0f231a509b838c5d944f1cbf66a30ea226e",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/view_recut/recut_common.py",
+   "original_sha256": null,
+   "original_sha256_note": "withheld: the original contains the operator's home-folder path, so its hash would confirm a guessed username",
+   "published_sha256": "326747d4c458cbaee298f6b05bbfb1e0b3d18d2f00e3a7a39c74fc284886263e",
+   "changed": true,
+   "change": "home-folder path written as os.path.expanduser('~/...')"
+  },
+  {
+   "file": "code/view_recut/prepare_recut.py",
+   "original_sha256": "4531ef7a2b2fbf6de170439bf0a9272698122c5a1a8c3f09e3d797637f70b59e",
+   "published_sha256": "4531ef7a2b2fbf6de170439bf0a9272698122c5a1a8c3f09e3d797637f70b59e",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/view_recut/freeze_recut.py",
+   "original_sha256": "faddd079da606efd56848d4c3b47155feb0d23510bf58b5ff4713a5445310bdf",
+   "published_sha256": "faddd079da606efd56848d4c3b47155feb0d23510bf58b5ff4713a5445310bdf",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/view_recut/fetch_frames.py",
+   "original_sha256": "9164dd04ec33c3bca0d98d7a92157c52121cd10ccc4ca6eedc18b632893bd71f",
+   "published_sha256": "9164dd04ec33c3bca0d98d7a92157c52121cd10ccc4ca6eedc18b632893bd71f",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/view_recut/review_frames.py",
+   "original_sha256": "ac7f54554395a11a159b1f3d1b3b39f3f647dc19faee172c025c9fed907c9527",
+   "published_sha256": "ac7f54554395a11a159b1f3d1b3b39f3f647dc19faee172c025c9fed907c9527",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/view_recut/run_recut.py",
+   "original_sha256": "16acca547259807c7bc02387470ce7443e56921104ec05f648e5a0cbd8ab6c8b",
+   "published_sha256": "16acca547259807c7bc02387470ce7443e56921104ec05f648e5a0cbd8ab6c8b",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/view_recut/analyze_recut.py",
+   "original_sha256": "50c0ab7f5b8461f90514873516ae976e196285d9bc72e9235e521b840d5f908f",
+   "published_sha256": "50c0ab7f5b8461f90514873516ae976e196285d9bc72e9235e521b840d5f908f",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "protocol/view_recut_protocol.json",
+   "original_sha256": null,
+   "original_sha256_note": "withheld: the original contains the operator's username and home-folder paths, so its hash would confirm a guessed username",
+   "published_sha256": "c5267e0d7f695341d53b9664bb4761ea2457d7f59175b3bfc93bc23fecf6d5f5",
+   "changed": true,
+   "change": "home-folder paths written as '~/', the username in two managed-preference paths as '<user>', and the hash of the original code/main_run/run.py withheld"
+  },
+  {
+   "file": "protocol/view_recut_frozen_hashes.json",
+   "original_sha256": null,
+   "original_sha256_note": "withheld: the original lists the hashes of two files that contain the operator's username, so its hash would confirm a guessed username",
+   "published_sha256": "d4cbd7b60676eaad741fbd1951b9cda77416df59e8da25a151bc2449cd9c3a64",
+   "changed": true,
+   "change": "the hashes of protocol.json and recut_common.py withheld"
+  },
+  {
+   "file": "results/view_recut_preregistered_analysis.json",
+   "original_sha256": null,
+   "original_sha256_note": "withheld: the original contains the rater's username, so its hash would confirm a guessed username",
+   "published_sha256": "485403ba45f0731a3317ce1a81a3112b27cb101212f36bf7fa2cba400595226c",
+   "changed": true,
+   "change": "the rater's username replaced by 'the experimenter (sole rater)', and the frozen hashes of protocol.json and recut_common.py withheld"
+  },
+  {
+   "file": "protocol/view_recut_frozen/README.md",
+   "original_sha256": "4ed1e9655f10d36173d7ceb4d970678fb959ab0a0da74566e6af4cf9582a069a",
+   "published_sha256": "4ed1e9655f10d36173d7ceb4d970678fb959ab0a0da74566e6af4cf9582a069a",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "protocol/view_recut_frozen/cohort.json",
+   "original_sha256": "8c9296711713fc2e7168d5ecf0be92fe90a551a36cf3e9a0a225261d444c6cbb",
+   "published_sha256": "8c9296711713fc2e7168d5ecf0be92fe90a551a36cf3e9a0a225261d444c6cbb",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "protocol/view_recut_frozen/download_plan.json",
+   "original_sha256": "74cbab384898f66a47074964d6f1367fcfb1bb67b0a66a166ac99a175e7a156b",
+   "published_sha256": "74cbab384898f66a47074964d6f1367fcfb1bb67b0a66a166ac99a175e7a156b",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/spoon_ladle_rerun/prepare_fix.py",
+   "original_sha256": "d49e301efa60d6c9e9900f18f31ed86c674446577246025e74dc1d872ceadc4c",
+   "published_sha256": "d49e301efa60d6c9e9900f18f31ed86c674446577246025e74dc1d872ceadc4c",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "code/spoon_ladle_rerun/run_fix.py",
+   "original_sha256": "04139ff0dd69b7c9e17a1d33b684cb5762b5060cb1761d7f479b0f53ba745b5c",
+   "published_sha256": "04139ff0dd69b7c9e17a1d33b684cb5762b5060cb1761d7f479b0f53ba745b5c",
+   "changed": false,
+   "change": ""
+  },
+  {
+   "file": "protocol/view_recut_frozen/main_overhead_records.json.gz",
+   "original_sha256": "0ed3f6f3d4a3afdb9582285247428b4f3f9994cc1728e67a988962d6d11546a8",
+   "published_sha256": "34431bac6af9790e919361ca8dedf5fdcd0a2aabe7a6539f72a9a6330feacbf5",
+   "changed": true,
+   "change": "gzip-compressed (both hashes are of the decompressed file); each record's 'sha256', the hash of its raw answer file, withheld because those files contain the operator's username; and each record's 'started_at' removed"
+  }
+ ]
+}
