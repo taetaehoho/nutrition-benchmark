@@ -1,7 +1,7 @@
 # Licence for everything outside code/ and analysis/
 
 The code in `code/` and `analysis/` is released under the MIT licence in [`LICENSE`](LICENSE). Everything
-else in this repository, including `data/`, `results/`, `figures/`, `protocol/`, `docs/`, `README.md` and
+else in this repository, including `data/`, `results/`, `figures/`, `protocol/`, `README.md` and
 `ORIGINAL_SHA256.json`, is released under the
 [Creative Commons Attribution 4.0 International licence (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 Credit "Calories from one food photo: four AI models compared (taetaehoho, 2026)" and link to

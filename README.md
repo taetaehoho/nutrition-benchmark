@@ -341,7 +341,6 @@ results/    tables behind the charts, and the re-cut's analysis output
 analysis/   scripts that rebuild results/ and figures/ from data/
 protocol/   prompts, output schema, run designs, and the re-cut's frozen plan
 code/       the run scripts, as a record (they need the unpublished run folder)
-docs/       the full quality review
 ORIGINAL_SHA256.json   hashes of copied files, and the six edited for publication
 ```
 
