@@ -6,8 +6,8 @@ Run from anywhere:
 
 Needs numpy and matplotlib only. No network and no model calls. Bootstrap draws
 use fixed seeds, so a rerun with the same library versions reproduces every
-number (the published files were made with Python 3.9, numpy 2.0.2 and
-matplotlib 3.9.4).
+number (the published files were made with Python 3.9, numpy 2.0.2,
+matplotlib 3.9.4 and Pillow 11.3.0).
 
 Rebuilds every file in results/ except smart24food_summary.csv (its labels are
 not redistributed; analysis/smart24food_scores.py rebuilds it from the atlas's
@@ -82,7 +82,7 @@ def f1(x):
 # ----------------------------------------------------------------------------- data
 
 def read_gz(name):
-    with gzip.open(DATA / name, "rt", newline="") as fh:
+    with gzip.open(DATA / name, "rt", encoding="utf-8", newline="") as fh:
         return list(csv.DictReader(fh))
 
 
@@ -90,7 +90,7 @@ def write_csv(name, rows):
     """Round floats once, here, to 4 decimals."""
     path = RESULTS / name
     cols = list(rows[0].keys())
-    with open(path, "w", newline="") as fh:
+    with open(path, "w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=cols, lineterminator="\n")
         w.writeheader()
         for r in rows:
@@ -101,8 +101,8 @@ def write_csv(name, rows):
 def main_run_tables():
     """Per view set x nutrient x configuration: mean absolute % error with plate-cluster bootstrap CIs,
     median % error, mean absolute error, MAE as % of the mean reference (Nutrition5k's own metric) with a
-    CI from the same draws,
-    signed error, plus constant-guess baselines and paired thinking-mode differences."""
+    CI from the same draws, signed error, plus constant-guess baselines and paired thinking-mode
+    differences."""
     rows = [r for r in read_gz("main_run_nutrition5k.csv.gz") if r["scored"] == "1"]
     cpos = {c: j for j, c in enumerate(CONFIGS)}
     table, effects, baselines = {}, [], {}
@@ -249,7 +249,7 @@ def thinking_dose_table():
 def recut_tables():
     """Same 799 plates, both views, medium thinking: point estimates from data/, CIs from the pre-registration."""
     rows = read_gz("view_recut.csv.gz")
-    analysis = json.loads((RESULTS / "view_recut_preregistered_analysis.json").read_text())
+    analysis = json.loads((RESULTS / "view_recut_preregistered_analysis.json").read_text(encoding="utf-8"))
     holm = {(x["config"], x["endpoint"]): x["p_holm"] for x in analysis["primary_tests"]}
     by = defaultdict(dict)
     for r in rows:
